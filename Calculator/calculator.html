@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <p id="resultado">Just simple calculations</p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="back()"><</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <td><button class="botao" onclick="insert('*')">X</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</but  ton></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class ="botao" onclick="insert('1')">1</button></td>
+                    <td><button class ="botao" onclick="insert('2')">2</button></td>
+                    <td><button class ="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class ="botao" style= "height: 106px"; onclick="calcular()">=</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button class ="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                    <td><button class ="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="help">
+            <button id="help" onclick="help()">Help</button>
+        </div>
+
+    </div> 
+
+</body>
+</html>
+
+<!-- 
+    Comentário sobre esse projeto :
+    Esse projeto foi bem satisfatorio de se fazer, já que seguir o tutorial sugerido no video foi bem fácil.
+    Entrentanto, eu optei por fazer algumas adições, como adicionar o overflow, que esconde o texto que ultrapassa a 
+    caixa de resultados; Adcionei o botão help que mostra uma mensagem que avisa para não usar o site se ele estiver
+    traduzido, já que ocorre um bug que impossibilita utlizar duas vezes o mesmo numero;
+    Mesmo com essas alterações, essa calculadora ainda sofre com algumas coisas, por exemplo: é póssivel colocar 
+    o ponto (.) mais de uma vez no mesmo algarismo e números muito grande não aparecem totalmente dentro da caixa
+    de resultado.
+    Por isso eu inseri algumas mensagem pedindo que faça apenas calculos simples.
+
+    Aprendizado:
+    Entendi como funciona o termos getElementById and innerHtml no JavaScript;
+    No CSS, aprendi como fazer um background com um linear-gradiant, ou seja, um background com duas cores misturadas.
+    além de comprender as tags overflow, text-overflow.
+    Em geral, aprendi muito sobre como funciona a comunicação entre arquivos Html e JavaScript e aprendi algumas coisas
+    novas em CSS
+
+    Criando por Lucas Leite Pereira, no dia 30-31/12/2021
+-->
